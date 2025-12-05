@@ -1,24 +1,18 @@
 # --------------------
-# 忽略依赖文件夹和构建产物
+# 核心依赖和构建文件
 # --------------------
-
-# 核心依赖文件夹
 node_modules
 /frontend/node_modules
-
-# 后端配置文件 (敏感信息，不应上传)
-.env
-.env.*
+/backend/node_modules
 .DS_Store
 
 # Next.js 临时文件和构建产物
 /.next/
 /out/
+.env.local
 
-# 编译的日志文件
-*.log
-
-# 其他编辑器或操作系统文件
-.vscode
-npm-debug.log*
-yarn-error.log*
+# --------------------
+# 敏感信息
+# --------------------
+.env
+.env.*
